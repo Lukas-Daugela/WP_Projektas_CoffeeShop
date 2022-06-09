@@ -14,55 +14,6 @@ body {
 * SECTION FOR NAVBAR
 ***
 */
-
-/* Navbar and logo color */
-/* .navigation-bar {
-  background-color: #2a1b16;
-  padding: 10px 0;
-}
-
-.navigation-bar .container {
-  display: flex;
-}
-
-.navigation-bar .link {
-  color: #af751e;
-  padding: 0 30px 0 0;
-  text-decoration: none;
-}
-
-.navigation-bar .links-container {
-  margin-left: auto;
-  display: flex;
-  align-items: center;
-}
-
-.logo {
-  background-image: url(../images/logo.jpg);
-  height: 71px;
-  width: 144px;
-  background-position: center;
-  background-size: contain;
-}
-.coffee-logo {
-  height: 50px;
-} */
-
-/* Bootstrap navigation not working atm*/
-/* .navbar {
-  background-color: #2a1b16;
-}
-
-.coffee-logo {
-  height: 50px;
-} */
-
-/* 
-***
-* SECTION FOR TEST NAVIGATION BAR WITH JS
-***
-*/
-
 .nav-header .nav-branding {
   background-image: url(../images/logo.jpg);
   background-position: center;
@@ -232,6 +183,11 @@ a {
   justify-content: end;
 }
 
+.menu-cards .card-bg-img:hover {
+  transform: scale(1.1);
+  opacity: 1;
+}
+
 .menu-cards p {
   margin-top: auto;
   margin-bottom: 0;
@@ -242,11 +198,11 @@ a {
 }
 
 .menu-cards .second {
-  background-image: url(../images/coffee_images/coffee_cup_2.jpg);
+  background-image: url(../images/cake/cake_9.jpg);
 }
 
 .menu-cards .third {
-  background-image: url(../images/coffee_images/coffee_cup_3.jpg);
+  background-image: url(../images/cake/cake_8.jpg);
 }
 
 /* Text with Photo's */
@@ -348,7 +304,6 @@ a {
 }
 
 /* Booking form */
-/* Sutvarkyti fiksuota dydi ir su media padaryti responsive */
 .booking-form .form-container {
   display: flex;
   flex-direction: column;
@@ -368,7 +323,8 @@ a {
 }
 
 .booking-section {
-  background-image: url(../images/coffee_images/coffe_black_background.jpg);
+  background-image: url(../images/booking-bg.png);
+  background-color: #200e02;
   height: 100vh;
   background-position: center;
   background-size: cover;
@@ -538,132 +494,6 @@ a {
 
 /* 
 ***
-* SECTION FOR FOOD MENU
-***
-*/
-.img-container {
-  background-position: center;
-  background-size: cover;
-  height: 250px;
-}
-
-.food-section .title-container {
-  display: flex;
-}
-
-.food-section .img-1 {
-  background-image: url(../images/cake/cake_1.jpg);
-}
-
-.food-section .img-2 {
-  background-image: url(../images/cake/cake_2.jpg);
-}
-
-.food-section .img-3 {
-  background-image: url(../images/cake/cake_3.jpg);
-}
-
-.food-section .img-4 {
-  background-image: url(../images/cake/cake_4.jpg);
-}
-
-.food-section .img-5 {
-  background-image: url(../images/cake/cake_5.jpg);
-}
-
-.food-section .img-6 {
-  background-image: url(../images/cake/cake_6.jpg);
-}
-
-.food-section .img-7 {
-  background-image: url(../images/cake/cake_7.jpg);
-}
-
-.food-section .img-8 {
-  background-image: url(../images/cake/cake_8.jpg);
-}
-
-.food-section .img-9 {
-  background-image: url(../images/cake/cake_9.jpg);
-}
-
-.food-section .img-10 {
-  background-image: url(../images/cake/cake_10.jpg);
-}
-
-.food-section .img-11 {
-  background-image: url(../images/cake/cake_11.jpg);
-}
-
-.food-section .img-12 {
-  background-image: url(../images/cake/cake_12.jpg);
-}
-
-/* 
-***
-* SECTION FOR COFFEE MENU
-***
-*/
-.img-container {
-  background-position: center;
-  background-size: cover;
-  height: 250px;
-}
-
-.drinks-section .title-container {
-  display: flex;
-}
-
-.drinks-section .img-1 {
-  background-image: url(../images/coffee_images/coffee_cup_1.jpg);
-}
-
-.drinks-section .img-2 {
-  background-image: url(../images/coffee_images/coffee_cup_2.jpg);
-}
-
-.drinks-section .img-3 {
-  background-image: url(../images/coffee_images/coffee_cup_3.jpg);
-}
-
-.drinks-section .img-4 {
-  background-image: url(../images/coffee_images/coffee_cup_4.jpg);
-}
-
-.drinks-section .img-5 {
-  background-image: url(../images/coffee_images/coffee_cup_5.jpg);
-}
-
-.drinks-section .img-6 {
-  background-image: url(../images/coffee_images/coffee_cup_6.jpg);
-}
-
-.drinks-section .img-7 {
-  background-image: url(../images/coffee_images/coffee_cup_7.jpg);
-}
-
-.drinks-section .img-8 {
-  background-image: url(../images/coffee_images/coffee_cup_8.jpg);
-}
-
-.drinks-section .img-9 {
-  background-image: url(../images/coffee_images/coffee_cup_9.jpg);
-}
-
-.drinks-section .img-10 {
-  background-image: url(../images/coffee_images/coffee_cup_10.jpg);
-}
-
-.drinks-section .img-11 {
-  background-image: url(../images/coffee_images/coffee_cup_11.jpg);
-}
-
-.drinks-section .img-12 {
-  background-image: url(../images/coffee_images/coffee_cup_12.jpg);
-}
-
-/* 
-***
 * SECTION FOR CAKES MENU
 ***
 */
@@ -702,11 +532,6 @@ a {
   display: flex;
   align-items: center;
 }
-
-/* .cakes-menu hr {
-  color: #af751e;
-  margin: 0;
-} */
 
 .cakes-menu .desc-container {
   padding: 10px 0 0 30px;
@@ -756,22 +581,81 @@ a {
   width: 240px;
 }
 
-.contact-footer {
-  background-color: #2a1b16;
+footer {
+  background-color: #321604;
+  color: white;
+  padding: 10px 0;
+}
+
+footer .first p {
+  color: #6c757d;
+  display: flex;
+  text-align: center;
+}
+
+footer .footer-con {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px 0;
+}
+
+footer .col .line {
+  height: 2px;
+  width: 153px;
+  background-color: #af751e;
+  margin-bottom: 25px;
+}
+
+footer .second p {
+  margin: 0;
+}
+
+footer .location-bottom-holder {
+  margin-bottom: 18px;
+}
+
+footer h4,
+footer p {
+  color: #af751e;
+}
+
+footer a {
   color: white;
 }
 
-.contact-footer a,
-.contact-footer h4 {
-  display: block;
+footer input {
+  border-radius: 62px;
+  height: 41px;
+  padding-left: 10px;
+  margin-bottom: 5px;
 }
 
-.contact-footer h4 {
-  padding-top: 20px;
+footer .icons i {
+  margin: 0 10px;
+  color: #af751e;
 }
 
-.contact-footer a {
-  color: white;
-  padding: 5px 0px 5px 0px;
-  text-decoration: none;
+footer .btn {
+  border-radius: 62px;
+}
+
+@media (min-width: 768px) {
+  footer .footer-con {
+    display: block;
+  }
+
+  footer .col {
+    width: 25%;
+  }
+
+  footer .row {
+    justify-content: space-around;
+  }
+
+  footer .first p {
+    color: #6c757d;
+    display: block;
+    text-align: start;
+  }
 }

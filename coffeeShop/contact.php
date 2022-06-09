@@ -1,11 +1,9 @@
 <?php 
 /* Template Name: Contact */
+get_header()
 ?>
 
-<div class="cla">
-    random stuff
-    random stuff
-    random stuff
-    random stuff
-    random stuff
-</div>
+
+
+
+<?php get_footer() ?>

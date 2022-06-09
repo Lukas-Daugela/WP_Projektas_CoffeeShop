@@ -1,3 +1,4 @@
+// NAVBAR
 const hamburger = document.querySelector(".hamburger");
 const navMenu = document.querySelector(".navigation-menu");
 const navBrand = document.querySelector(".branding-link");

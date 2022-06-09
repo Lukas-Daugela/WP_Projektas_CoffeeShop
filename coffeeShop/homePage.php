@@ -24,33 +24,40 @@ get_header();
   <!-- uzdeti tinkamas img, background color, opacity, JS paryskinanti efekta on hover -->
   <section class="menu-cards">
     <div class="container">
-      <div class="row row-cols-1 row-cols-lg-3 g-3">
-        <div class="col">
-          <div class="card-bg-img first">
+      <div class="row row-cols-1 row-cols-lg-3 g-5">
+
+        <a href="/wordpress_coffee-shop/wordpress/coffee-menu">
+          <div class="col">
+            <div class="card-bg-img first">
+              <div class="card-text text-center">
+                <p>Lorem, ipsum dolor.</p>
+                <h2>Coffee</h2>
+              </div>
+            </div>
+          </div>
+        </a>
+
+        <a href="/wordpress_coffee-shop/wordpress/cakes-menu">
+          <div class="col">
+            <div class="card-bg-img second">
             <div class="card-text text-center">
-              <p>Lorem, ipsum dolor.</p>
-              <h2>Lorem, ipsum.</h2>
+                <p>Lorem, ipsum dolor.</p>
+                <h2>Cakes</h2>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
 
-        <div class="col">
-          <div class="card-bg-img second">
-          <div class="card-text text-center">
-              <p>Lorem, ipsum dolor.</p>
-              <h2>Lorem, ipsum.</h2>
+        <a href="/wordpress_coffee-shop/wordpress/cakes-menu">
+          <div class="col">
+            <div class="card-bg-img third">
+            <div class="card-text text-center">
+                <p>Lorem, ipsum dolor.</p>
+                <h2>Sweets</h2>
+              </div>
             </div>
           </div>
-        </div>
-
-        <div class="col">
-          <div class="card-bg-img third">
-          <div class="card-text text-center">
-              <p>Lorem, ipsum dolor.</p>
-              <h2>Lorem, ipsum.</h2>
-            </div>
-          </div>
-        </div>
+        </a>
       </div>
     </div>
   </section>
@@ -61,6 +68,14 @@ get_header();
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-3">
         <div class="col text">
+        <?php
+          if( have_posts() ){
+              while( have_posts() ){
+                  the_post();
+                  the_content();
+              }
+          }
+        ?>
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis accusantium porro sequi error animi mollitia.</p>
           <div class="btn btn-primary">Read more</div>
