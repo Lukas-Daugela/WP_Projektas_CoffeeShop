@@ -68,6 +68,7 @@ get_header();
     <div class="container">
       <div class="row row-cols-1 row-cols-md-3 g-3">
         <div class="col text">
+
         <?php
           if( have_posts() ){
               while( have_posts() ){
@@ -76,6 +77,7 @@ get_header();
               }
           }
         ?>
+        
           <h2>Lorem ipsum dolor sit amet.</h2>
           <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Veritatis accusantium porro sequi error animi mollitia.</p>
           <div class="btn btn-primary">Read more</div>
